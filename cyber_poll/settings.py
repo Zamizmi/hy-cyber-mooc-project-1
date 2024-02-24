@@ -107,51 +107,52 @@ AUTH_PASSWORD_VALIDATORS = [
     # },
 ]
 
-LOGGING = {
-    "version": 1,
-    "disable_existing_loggers": False,
-    "formatters": {
-        "verbose": {
-            "datefmt": "%Y-%m-%d_%H:%M:%S",
-            "style": "{",
-        },
-        "simple": {
-            "format": "{levelname} {message}",
-            "style": "{",
-        },
-    },
-    "handlers": {
-        "file": {
-            "level": "INFO",
-            "class": "logging.handlers.TimedRotatingFileHandler",
-            "formatter": "verbose",
-            "filename": "./logs/cyber_poll.log",
-            "when": "midnight",  # specify the type of interval
-            "interval": 1,
-            "backupCount": 5,  # number of backup files to keep
-            "encoding": None,
-            "delay": False,
-            "utc": False,
-            "atTime": None,
-            "errors": None,
-        },
-        "console": {
-            "level": "INFO",
-            "class": "logging.StreamHandler",
-            "formatter": "simple",
-        },
-    },
-    "loggers": {
-        "django": {
-            "handlers": ["console"],
-            "propagate": True,
-        },
-        "": {
-            "handlers": ["file"],
-            "level": "INFO",
-        },
-    },
-}
+# LOGGING = {
+#     "version": 1,
+#     "disable_existing_loggers": False,
+#     "formatters": {
+#         "verbose": {
+#             "format": "{levelname} {asctime} {module} {process:d} {thread:d} {message}",
+#             "datefmt": "%Y-%m-%d_%H:%M:%S",
+#             "style": "{",
+#         },
+#         "simple": {
+#             "format": "{levelname} {message}",
+#             "style": "{",
+#         },
+#     },
+#     "handlers": {
+#         "file": {
+#             "level": "INFO",
+#             "class": "logging.handlers.TimedRotatingFileHandler",
+#             "formatter": "verbose",
+#             "filename": "./logs/cyber_poll.log",
+#             "when": "midnight",  # specify the type of interval
+#             "interval": 1,
+#             "backupCount": 5,  # number of backup files to keep
+#             "encoding": None,
+#             "delay": False,
+#             "utc": False,
+#             "atTime": None,
+#             "errors": None,
+#         },
+#         "console": {
+#             "level": "INFO",
+#             "class": "logging.StreamHandler",
+#             "formatter": "simple",
+#         },
+#     },
+#     "loggers": {
+#         "django": {
+#             "handlers": ["console"],
+#             "propagate": True,
+#         },
+#         "": {
+#             "handlers": ["file"],
+#             "level": "INFO",
+#         },
+#     },
+# }
 
 
 # Internationalization

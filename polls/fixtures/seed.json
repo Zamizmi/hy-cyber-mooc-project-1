@@ -4,7 +4,8 @@
       "pk": 1,
       "fields": {
         "question_text": "What is the most common mistake in React?",
-        "pub_date": "Lennon"
+        "pub_date": "2024-02-24 13:37",
+        "description_text":"<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png\" width=\"500\" height=\"500\"/>\n <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/1200px-React_Logo_SVG.svg.png\" width=\"500\" height=\"500\" />\r LOOK AT IT!"
       }
     },
     {
