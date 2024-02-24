@@ -2,7 +2,7 @@
     <a href="/polls">Polls</a>
     {% if user.is_authenticated %}
     <form action="{% url 'polls:logout' %}" method="post">
-        {% csrf_token %}
+        <!-- {% csrf_token %} -->
         <button type="submit">Log Out</button>
       </form>
     {% else %}
