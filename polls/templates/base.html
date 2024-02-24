@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{% block title %}Cyber Polls{% endblock %}</title>
+</head>
+
+<body>
+
+    {% block navbar %}
+        {% include  'navbar.html' %}
+    {% endblock %}
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+
+        <hr>
+
+        <footer>
+            <p>Such wow.</p>
+        </footer>
+    </div>
+</body>
+</html>

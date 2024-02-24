@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "polls.apps.PollsConfig",
 ]
 
 MIDDLEWARE = [
@@ -67,7 +68,7 @@ TEMPLATES = [
         },
     },
 ]
-
+LOGIN_REDIRECT_URL = "/polls"
 WSGI_APPLICATION = "cyber_poll.wsgi.application"
 
 
