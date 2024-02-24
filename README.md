@@ -11,6 +11,10 @@ Cyber Security Base 2024 Project 1 repo with 5 OWASP vulnerabilities with Django
 ### 1. Broken access-control
 
 ### 2. Injection
+Creating a new Poll allows user to add any kind of unsafe text into the description field. One user has used it to include images, but it also allows user to add JS-code which is ran on any users machine.
+See file: `polls/templates/details.html` and line:5.
+Line 6: has the fix commented out.
+
 
 ### 3. Insecure Design - Sniff which users are using the service
 

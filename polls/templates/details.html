@@ -2,6 +2,8 @@
 {% block content %}
 
 <legend><h1>{{ question.question_text }}</h1></legend>
+<h3>{{question.description_text|safe}}</h3>
+<!-- <h3>{{question.description_text}}</h3> -->
 <ul>
     {% for choice in question.choice_set.all %}
         <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
@@ -19,6 +21,7 @@
             </fieldset>
             <input type="submit" value="Vote">
         </form>
+        <br>
     {% else %}
         <a class="login" href="{% url 'polls:login' %}">Login</a>
     {% endif %}

@@ -1,0 +1,28 @@
+[
+    {
+      "model": "polls.question",
+      "pk": 1,
+      "fields": {
+        "question_text": "What is the most common mistake in React?",
+        "pub_date": "Lennon"
+      }
+    },
+    {
+        "model": "polls.choice",
+        "pk": 1,
+        "fields": {
+          "question": 1,
+          "choice_text": "Hooks",
+          "votes": 0
+        }
+    },
+    {
+        "model": "polls.choice",
+        "pk": 2,
+        "fields": {
+          "question": 1,
+          "choice_text": "Authentication with JWT",
+          "votes": 0
+        }
+    }
+  ]

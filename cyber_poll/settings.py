@@ -69,6 +69,7 @@ TEMPLATES = [
     },
 ]
 LOGIN_REDIRECT_URL = "/polls"
+LOGOUT_REDIRECT_URL = "/polls"
 WSGI_APPLICATION = "cyber_poll.wsgi.application"
 
 
