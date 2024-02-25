@@ -3,10 +3,10 @@ Cyber Security Base 2024 Project 1 repo with 5 OWASP vulnerabilities with made w
 
 ## Setup run environment
 1. Install docker, follow the official instructions [in docker.com](https://docs.docker.com/engine/install/)
-2. ```docker-compose start```
+2. ```docker-compose up db && docker-compose up web``` to setup the containers. You need to run migration so open new terminal, and run the scripts 3. and 4.
 3. ```docker-compose exec web ./migrate.sh```
-4. ```docker-compose exec web ./seedDB.sh``` You are prompted to give the password for the superadmin
-5. Open [0.0.0.0:8001](http://0.0.0.0:8001)
+4. ```docker-compose exec web ./seedDB.sh``` You are prompted to give the username, email and password for the superadmin. you can user admin, leavy email empty and admin for the user if you want.
+5. Open [0.0.0.0:8001](http://0.0.0.0:8001) and you should see app running.
 
 ## Example Vulnerabilities
 ### Flaw 1. Cross-site request forgery
